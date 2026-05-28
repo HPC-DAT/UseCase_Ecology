@@ -27,6 +27,8 @@ rustac --version
 from https://basisdata.nl/hwh-portal/download/index.html
 AHNx -> Puntenwolk -> Puntenwolk (1x1 km) -> Selectie exporteren (txt)
 
+There's a local copy reduced to 10 COPC URLs.
+
 Note, for geoJSON file, use:
 AHNx -> Puntenwolk -> Puntenwolk (1x1 km) -> Selectie exporteren (GeoJSON, RD)
 
