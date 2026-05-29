@@ -209,3 +209,5 @@ __marimo__/
 
 # Large test files
 *.copc.laz
+*.laz
+*.las

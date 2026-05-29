@@ -84,3 +84,25 @@ Note, PDAL has a couple peculiarities that make it awkward to work with:
 However, it can read and write COPC files.
 
 
+
+
+
+# Adapt to use laspy & shapely instead
+
+```(bash)
+conda install -c conda-forge geojson requests laspy lazrs-python geopandas
+```
+
+
+```(bash)
+pyhton laspy_crop.py
+```
+
+Note, just a proof of concept; COPC paths still hard-coded instead of collected from AiO STAC.
+
+
+
+
+
+
+
