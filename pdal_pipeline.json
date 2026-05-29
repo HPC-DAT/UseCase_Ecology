@@ -12,7 +12,10 @@
     {
         "type": "filters.crop",
         "a_srs": "EPSG:7415",
-        "polygon": "POLYGON((124350.0 485619.4, 125923.4 484605.2, 126312.3 485462.8, 125902.5 485646.0, 124589.4 485707.5, 124350.0 485619.4))"
+        "ogr": {
+            "type": "ogr",
+            "datasource": "aoi.geojson"
+        }
     },
     {
         "type": "writers.copc",
