@@ -8,8 +8,7 @@ Opening a dataset reads source metadata such as point counts, dimensions,
 bounds, CRS, and properties. It does not load point records. Point data is read
 only when a bounded selection is passed to the DuckDB/PDAL reader.
 
-The package is intentionally independent of AHN, Laserchicken, Laserfarm, and
-any particular partitioning strategy. Application-specific partitioners can
+Application-specific partitioners can
 inspect the dataset metadata and produce reusable `PointCloudSelection`
 objects.
 
@@ -18,7 +17,7 @@ objects.
 This is an initial implementation. The public API may still change before a
 stable release.
 
-The current DuckDB PDAL extension materializes the points selected from one
+Note: The current DuckDB PDAL extension materializes the points selected from one
 COPC source before DuckDB exposes them as Arrow batches. The package processes
 matching sources one at a time, but it cannot make that source-level operation
 fully streaming.
@@ -101,8 +100,8 @@ source properties. `dataset.source_records` exposes the same information as
 frozen Python metadata records. Nested `attrs` and `properties` mappings should
 be treated as read-only application metadata.
 
-The initial GeoParquet adapter supports STAC columns used by the included AHN
-catalog:
+The initial GeoParquet adapter supports the following STAC columns (as used by the included AHN
+catalog):
 
 - `id`
 - `assets`
